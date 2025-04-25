@@ -47,10 +47,10 @@ L’objectif est d’**optimiser la consommation d’eau** et de **minimiser les
 
 ## 🧑‍💻 Répartition des Tâches
 
-- **Youssef** : Développement C++ sur microcontrôleur, lecture capteurs, envoi CORBA.
-- **Personne B** : Implémentation du serveur CORBA, rédaction IDL, liaison microcontrôleur-serveur, stockage des données.
-- **Personne C** : Conception de la base de données, création des tables, intégration avec le serveur CORBA, optimisation des requêtes.
-- **Alaeddine** : Développement de l’interface web (Flask), création des vues HTML/CSS, connexion avec CORBA, affichage des données.
+- **Youssef amzil** : Développement C++ sur microcontrôleur, lecture capteurs, envoi CORBA.
+- **Nora lahsuni** : Implémentation du serveur CORBA, rédaction IDL, liaison microcontrôleur-serveur, stockage des données.
+- **Abdelghani amejoud** : Conception de la base de données, création des tables, intégration avec le serveur CORBA, optimisation des requêtes.
+- **Alaeddine bara** : Développement de l’interface web (Flask), création des vues HTML/CSS, connexion avec CORBA, affichage des données.
 
 &nbsp;
 
