@@ -59,15 +59,18 @@ void loop() {
   Serial.print(raw);
   Serial.println(F(")"));
 
-  // ——— Condition pompe ———
-  if (moisturePercent > MOISTURE_THRESHOLD) {
-    digitalWrite(RELAY_PIN, HIGH);  // active le relais → pompe ON
-    Serial.println(F(">> Pompe ON"));
+// ——— Condition pompe (Corrigée) ———
+// ——— Condition pompe (Corrigée pour relais Active-LOW) ———
+  if (moisturePercent < 70) {
+    // Le sol est trop sec (humidité < seuil), il faut arroser
+    // Pour activer un relais Active-LOW, on envoie LOW
+    digitalWrite(RELAY_PIN, LOW);   // active le relais -> pompe ON
+    Serial.println(F(">> Sol sec - Pompe ON (Relais Actif LOW)"));
   } else {
-
-    
-    digitalWrite(RELAY_PIN, LOW);   // relais inactif → pompe OFF
-    Serial.println(F(">> Pompe OFF"));
+    // Le sol est suffisamment humide (humidité >= seuil), on arrête
+    // Pour désactiver un relais Active-LOW, on envoie HIGH
+    digitalWrite(RELAY_PIN, HIGH);  // désactive le relais -> pompe OFF
+    Serial.println(F(">> Sol humide - Pompe OFF (Relais Actif LOW)"));
   }
 
   Serial.println();
