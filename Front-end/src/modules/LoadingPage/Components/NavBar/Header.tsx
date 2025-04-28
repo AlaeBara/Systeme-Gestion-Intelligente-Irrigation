@@ -16,7 +16,7 @@ export function HeaderMegaMenu() {
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   
     return (
-        <Box pb={120}>
+        <Box pb={10}>
             <header className={classes.header}>
                 <Group justify="space-between" h="100%">
 
