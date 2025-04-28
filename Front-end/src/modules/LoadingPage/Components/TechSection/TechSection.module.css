@@ -1,0 +1,26 @@
+.sectionTitle {
+    font-size: rem(32px);
+    margin-bottom: var(--mantine-spacing-xl);
+    font-family: 'Poppins';
+    
+    @media (max-width: em(768px)) {
+      font-size: rem(24px);
+    }
+}
+  
+
+.icon{
+    color: var(--mantine-color-blue-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.content {
+    padding-top: var(--mantine-spacing-sm);
+}
+  
+.title {
+    margin-bottom: var(--mantine-spacing-xs);
+    line-height: 1;
+}
