@@ -29,7 +29,9 @@ export function HeroText() {
             </Container>
 
             <div className={classes.controls}>
-                <Button className={classes.control} size="lg" variant="default" color="gray">
+                <Button className={classes.control} size="lg" variant="default" color="gray" 
+                    onClick={() => window.scrollTo({ top: document.getElementById('solution')?.offsetTop, behavior: 'smooth' })}
+                >
                     Notre solution
                 </Button>
             </div>
